@@ -1,7 +1,7 @@
-2. 자료형(Data type)
-자료의 종류와 구조를 정의하는 것
-파이썬 : 동적 타입 언어(↔ 정적 타입 언어)
-변수를 만들때 별도의 타입을 지정하지 않아도 됨
+# 2. 자료형(Data type)
+# 자료의 종류와 구조를 정의하는 것
+# 파이썬 : 동적 타입 언어(↔ 정적 타입 언어)
+# 변수를 만들때 별도의 타입을 지정하지 않아도 됨
 # 1. 문자열(string, str)
 my_str1 = '' # 빈문자열(O)
 my_str2 = " " # 공백문자열(O)
@@ -105,9 +105,9 @@ print(10 + 5.0)
 print(str(100), type(str(100)))
 print(str(3.14), type(str(3.14)))
 print(str(True), type(str(True)))
-100 <class 'str'>
-3.14 <class 'str'>
-True <class 'str'>
+# 100 <class 'str'>
+# 3.14 <class 'str'>
+# True <class 'str'>
 # 4. 논리형으로 변환 : bool()
 print(bool(1))
 print(bool(0))
@@ -118,8 +118,7 @@ title, director, year, genre = "아이언맨", "놀란", 2008, "슈퍼히어로"
 
 print(f"Title: {title}, Director: {director}, Year: {year}, Genre: {genre}")
 print(f"제가 제일 좋아하는 영화는 {title}입니다")
-Title: 아이언맨, Director: 놀란, Year: 2008, Genre: 슈퍼히어로
-제가 제일 좋아하는 영화는 아이언맨입니다
+
 # 실습2 자기소개 하기
 이름, 나이, MBTI, 취미 = "ian", 15, "ENFJ", "책읽기"
 
@@ -129,9 +128,3 @@ print(f"""안녕하세요.
 제 MBTI는 {MBTI}에요.
 취미는 {취미}랍니다. 
 하하하""")
-안녕하세요.
-제 이름은 ian이고,
-15입니다.
-제 MBTI는 ENFJ에요.
-취미는 책읽기랍니다. 
-하하하
