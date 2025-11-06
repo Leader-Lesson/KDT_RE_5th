@@ -21,8 +21,8 @@ print("조건문 종료")
 
 # 들여쓰기 에러 예시
 if a > 10:
-print("a는 10보다 커요") # indent 에러
-
+# print("a는 10보다 커요") # indent 에러
+  print("조건문 종료")
 
 # In[ ]:
 
