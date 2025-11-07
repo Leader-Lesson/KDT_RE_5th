@@ -48,7 +48,7 @@ h.introduce("ian", 15)
 
 
 # 실습1. 계산기 모듈 만들어보기
-import calc as c
+import Python.my_package.calc as c
 
 c.add(3, 5)
 c.subtract(10, 3)

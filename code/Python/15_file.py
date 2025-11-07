@@ -246,7 +246,7 @@ with open("./output/dog_copy.jpg", "wb") as f:
 
 # In[ ]:
 
-
+# 예외처리
 try:
   num = int(input())
   print(10/num)
