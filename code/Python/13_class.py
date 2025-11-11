@@ -5,7 +5,7 @@
 # - 데이터와 기능을 하나로 묶는 구조
 # - 개념적(기능적)으로 유사한 관계에 있는 것들을 묶어줌
 
-# In[ ]:
+
 
 
 # 클래스 기본 문법
@@ -33,7 +33,7 @@ another_intance = ClassName("다른 인스턴스")
 another_intance.method_name()
 
 
-# In[ ]:
+
 
 
 class Person:
@@ -63,7 +63,7 @@ p2.add_age()
 p2.introduce()
 
 
-# In[ ]:
+
 
 
 # 실습1.
@@ -97,7 +97,7 @@ nexus.read_page(500)
 nexus.progress()
 
 
-# In[ ]:
+
 
 
 # 📌문제2. Rectangle 클래스 구현
@@ -117,7 +117,7 @@ my_rect = Rectangle(w, h)
 print(f"사각형의 넓이는 {my_rect.area()}입니다.")
 
 
-# In[ ]:
+
 
 
 # 클래스 변수
@@ -140,7 +140,7 @@ print("인2", dog2.kind)
 print("클래스", Dog.kind)
 
 
-# In[ ]:
+
 
 
 # 클래스 메서드
@@ -163,7 +163,7 @@ book2 = Book("맹자", "맹자")
 Book.get_count()
 
 
-# In[ ]:
+
 
 
 # 정적 메서드
@@ -179,7 +179,7 @@ class OperationTool:
 OperationTool.add(10,20)
 
 
-# In[ ]:
+
 
 
 # 실습2. User 클래스 구현
@@ -214,7 +214,7 @@ u3 = User("사자보이즈", 1000)
 User.get_total_users()
 
 
-# In[ ]:
+
 
 
 # 접근 제어와 정보 은닉
@@ -253,7 +253,7 @@ p1.add_age(130)
 # p1.get_age()
 
 
-# In[ ]:
+
 
 
 # @property 데코레이터
@@ -285,7 +285,7 @@ c1.value = -100
 c1.value
 
 
-# In[ ]:
+
 
 
 # 실습3.
@@ -314,7 +314,7 @@ user1.change_password("abc123", "qwer1234")
 user1.check_password("qwer1234")
 
 
-# In[ ]:
+
 
 
 # 문제 2. Student 클래스: 성적 검증
@@ -341,7 +341,7 @@ s1.score
 s1.score = 200
 
 
-# In[ ]:
+
 
 
 # 상속
@@ -365,7 +365,7 @@ d.bark()
 d.name
 
 
-# In[ ]:
+
 
 
 class Animal:
@@ -397,7 +397,7 @@ print(d.age)
 print(d.species)
 
 
-# In[ ]:
+
 
 
 # 다단계 상속
@@ -428,7 +428,7 @@ d.eat()
 d.bark()
 
 
-# In[ ]:
+
 
 
 # 실습4.
@@ -472,8 +472,6 @@ t.pritInfo()
 t.area()
 
 
-# In[52]:
-
 
 # 추상 클래스(Abstract Class)
 # 클래스의 구조를 정의하는 클래스
@@ -494,7 +492,7 @@ d = Dog()
 d.bark()
 
 
-# In[ ]:
+
 
 
 # 실습5. 추상 클래스 Payment 구현

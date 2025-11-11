@@ -6,7 +6,7 @@
 # - 복잡한 코드를 작은 단위로 나눌 수 있게 도와줌
 # - 특정한 코드들을 재사용 할 수 있게 함
 
-# In[ ]:
+
 
 
 # 사용자 정의 함수 기본 문법
@@ -27,7 +27,7 @@ def 함수이름(매개변수):
 # 함수의 실행시 매개변수로 전달하는 실제 값
 
 
-# In[ ]:
+
 
 
 # 함수의 필요성 예제
@@ -58,7 +58,7 @@ else :
 # ...
 
 
-# In[ ]:
+
 
 
 def my_func(a,b):
@@ -73,7 +73,7 @@ print(my_func(30,50))
 print(my_func(50,30))
 
 
-# In[ ]:
+
 
 
 # 예제1.
@@ -90,7 +90,7 @@ print(add(10,20))
 print(add(100,50))
 
 
-# In[ ]:
+
 
 
 # 실습 1.
@@ -121,7 +121,7 @@ print(calculate(1000,10000,"&"))
 print(calculate(30,50,"+") + calculate(10,20,"+"))
 
 
-# In[ ]:
+
 
 
 # 키워드 인자
@@ -139,7 +139,7 @@ def my_func(a, b, c=None, operator=None):
 my_func(10,20,operator="+")
 
 
-# In[ ]:
+
 
 
 # 기본값 인자
@@ -152,7 +152,7 @@ greet("ian")
 greet("ian", "반갑습니다!")
 
 
-# In[ ]:
+
 
 
 # 위치 가변 인자
@@ -165,7 +165,7 @@ def add_all(*args):
 add_all(1,2,3,4,5)
 
 
-# In[ ]:
+
 
 
 # 키워드 가변 인자
@@ -179,7 +179,7 @@ def print_info(**kwagrs):
 print_info(name="ian", age=15, city="서울", job="developer")
 
 
-# In[ ]:
+
 
 
 # 여러가지 가변 인자를 섞어서 사용할 수 있음
@@ -194,7 +194,7 @@ def my_func(a, b=None, *args, **kwagrs):
 my_func(10, 20, 30, 40, 50, name="ian", age=15)
 
 
-# In[ ]:
+
 
 
 def add_to_list(my_list):
@@ -206,7 +206,7 @@ add_to_list(test_list)
 print(test_list)
 
 
-# In[ ]:
+
 
 
 # 실습 2. 가변인자 연습하기
@@ -220,7 +220,7 @@ def average(*agrs):
 average()
 
 
-# In[ ]:
+
 
 
 # 문제 2. 가장 긴 문자열 찾기
@@ -244,7 +244,7 @@ def longgest2(*agrs):
 longgest2()
 
 
-# In[ ]:
+
 
 
 # 문제 3. 사용자 정보 출력 함수
@@ -256,7 +256,7 @@ def print_info(**kwagrs):
 print_info(name="ian", age=15, city="서울", job="developer")
 
 
-# In[ ]:
+
 
 
 # 문제 4. 할인 계산기
@@ -269,7 +269,7 @@ def discount_price(**kwargs):
 discount_price(apple=2000, watermelon=20000, chocolate=2500)
 
 
-# In[ ]:
+
 
 
 # 전역변수 : 함수 밖에 선언된 변수
@@ -296,7 +296,7 @@ def any_func():
   print(x)
 
 
-# In[ ]:
+
 
 
 # 전역변수와 지역변수 예제1
@@ -312,7 +312,7 @@ my_func()
 print("전역변수", x)
 
 
-# In[ ]:
+
 
 
 # 전역변수와 지역변수 예제1
@@ -328,7 +328,7 @@ my_func()
 print("전역", x)
 
 
-# In[ ]:
+
 
 
 # 예제2
@@ -349,7 +349,7 @@ func2()
 print(x)
 
 
-# In[ ]:
+
 
 
 # 권장되는 패턴
@@ -366,7 +366,7 @@ x = my_func(x)
 print("전역", x)
 
 
-# In[ ]:
+
 
 
 # 스택 구조에 대한 예시
@@ -384,7 +384,7 @@ def outter_func():
 outter_func()
 
 
-# In[ ]:
+
 
 
 # 실습 3. 전역 변수 연습하기
@@ -437,7 +437,7 @@ login("c")
 login("de")
 
 
-# In[ ]:
+
 
 
 import time
@@ -457,7 +457,7 @@ def recursive_func(n):
 recursive_func(5)
 
 
-# In[ ]:
+
 
 
 # 실습 4. 거듭 제곱
@@ -479,7 +479,7 @@ def power_rec(a, n):
 print("재귀함수", power_rec(4,3))
 
 
-# In[ ]:
+
 
 
 # 실습 5. 팩토리얼
@@ -515,7 +515,7 @@ factorial_rec(0)
 factorial_rec(5)
 
 
-# In[ ]:
+
 
 
 # 실습 6. 피보나치 수열
@@ -546,7 +546,7 @@ def fibonacci_rec(n):
 fibonacci_rec(20)
 
 
-# In[ ]:
+
 
 
 # 람다(lambda) 함수
@@ -573,7 +573,7 @@ add_func(3,5)
 (lambda x: x ** 2)(10)
 
 
-# In[ ]:
+
 
 
 # 람다함수의 활용
@@ -607,7 +607,7 @@ my_list3 = ["apple", "banana", "watermelon", "grape"]
 sorted(my_list3, key=lambda word: len(word), reverse=True)
 
 
-# In[ ]:
+
 
 
 # 실습 7.
@@ -621,7 +621,7 @@ students = [
 list(filter(lambda s: sum(s[1]) / len(s[1]) >= 70, students))
 
 
-# In[ ]:
+
 
 
 # 📌 문제2. 키워드 추출 리스트 만들기
@@ -634,7 +634,7 @@ sentences = [
 list(map(lambda s: s.split()[0], sentences))
 
 
-# In[ ]:
+
 
 
 # 📌 문제3. 튜플 리스트를 정렬하기

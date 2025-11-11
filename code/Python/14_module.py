@@ -5,7 +5,7 @@
 # - 여러 기능(함수)의 묶음
 # - 하나의 py파일로 여러 기능을 모아놓은 것
 
-# In[ ]:
+
 
 
 # 모듈 불러오기(1)
@@ -14,7 +14,7 @@ import hello
 hello.greeting("ian")
 
 
-# In[ ]:
+
 
 
 # 모듈 불러오기(2)
@@ -24,7 +24,7 @@ greeting("ian")
 introduce("ian", 15)
 
 
-# In[ ]:
+
 
 
 # 모듈 불러오기(3)
@@ -34,7 +34,7 @@ greeting("ian")
 introduce("ian", 15)
 
 
-# In[ ]:
+
 
 
 # 모듈 불러오기(4)
@@ -44,7 +44,7 @@ h.greeting("ian")
 h.introduce("ian", 15)
 
 
-# In[ ]:
+
 
 
 # 실습1. 계산기 모듈 만들어보기
@@ -57,7 +57,7 @@ c.divide(3, 0)
 c.divide(20, 3)
 
 
-# In[ ]:
+
 
 
 # 패키지
@@ -71,14 +71,14 @@ from my_package import calc as c
 c.add(10,20)
 
 
-# In[ ]:
+
 
 
 # 패키지에서 모듈 불러오기(2)
 from my_package.calc import add
 
 
-# In[ ]:
+
 
 
 # 파이썬 표준 라이브러리
@@ -117,7 +117,7 @@ math.gcd(12, 20)
 math.lcm(12, 20)
 
 
-# In[ ]:
+
 
 
 # 실습2.
@@ -133,7 +133,7 @@ dist = round(math.sqrt(math.pow((x2-x1),2) + math.pow((y2-y1),2)), 2)
 print(f"두 점 사이의 거리는: {dist}")
 
 
-# In[ ]:
+
 
 
 # 📌 문제 2. 상품 나누기: 최소 공배수와 최대 공약수
@@ -150,7 +150,7 @@ print(f"최대 간식 개수: {gcd}")
 print(f"최소 간식 개수: {lcm}")
 
 
-# In[ ]:
+
 
 
 # random 모듈 : 랜덤 값(난수) 생성시 사용
@@ -190,7 +190,7 @@ random.shuffle(numbers)
 numbers
 
 
-# In[ ]:
+
 
 
 # 실습3. 로또 번호 뽑기
@@ -214,7 +214,7 @@ lotto.sort()
 print(lotto)
 
 
-# In[ ]:
+
 
 
 # 방법2
@@ -222,7 +222,7 @@ result = sorted(random.sample(range(1,46), k=6))
 result
 
 
-# In[ ]:
+
 
 
 # 실습4. 가위 바위 보 게임 만들기
@@ -254,7 +254,7 @@ while win_count < 3:
   print(f"현재 승리 횟수: {win_count}")
 
 
-# In[ ]:
+
 
 
 # datetime 모듈 
@@ -294,7 +294,7 @@ datetime.datetime.now().year
 datetime.date.today().day
 
 
-# In[ ]:
+
 
 
 # calendar 모듈
@@ -313,7 +313,7 @@ calendar.calendar(2025)
 calendar.weekday(2025, 7, 7)
 
 
-# In[ ]:
+
 
 
 import datetime
@@ -341,7 +341,7 @@ days_left = (birthday_next - today).days
 print(f"다음 생일까지 {days_left}일이 남았어요!🎉")
 
 
-# In[ ]:
+
 
 
 # time 모듈
@@ -371,7 +371,7 @@ print(parsed)
 time.sleep(1) 
 
 
-# In[ ]:
+
 
 
 # 시간 측정하기
@@ -385,7 +385,7 @@ end = time.time()
 print(f"수행시간 : {end-start: .2f}초")
 
 
-# In[ ]:
+
 
 
 # 실습6. 타자연습게임
@@ -426,7 +426,7 @@ et = end - start
 print(f"총 소요시간 : {et: 2f}초")
 
 
-# In[ ]:
+
 
 
 # sys 모듈 
@@ -441,7 +441,7 @@ sys.version
 sys.platform
 
 
-# In[ ]:
+
 
 
 import sys
@@ -451,7 +451,7 @@ sys.exit() # 프로그램 강제 종료
 print("이 코드는 실행되지 않습니다.")
 
 
-# In[ ]:
+
 
 
 # os 모듈
@@ -463,9 +463,6 @@ os.getcwd()
 
 # listdir(): 현재 폴더내 파일, 디렉터리 목록 반환
 os.listdir()
-
-
-# In[7]:
 
 
 import os

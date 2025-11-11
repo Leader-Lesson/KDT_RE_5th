@@ -5,7 +5,7 @@
 # - 원소의 중복을 허용하지 않는 여러 데이터의 모음
 # - 순서가 없는 컬렉션 자료형
 
-# In[ ]:
+
 
 
 # set 만들기
@@ -33,7 +33,7 @@ my_list = list(s5)
 print(my_list, type(my_list))
 
 
-# In[ ]:
+
 
 
 # 인덱싱
@@ -44,7 +44,7 @@ s_list = list(s1) # 변환하는 과정에서 순서가 보장되지 않을 수 
 s_list[2]
 
 
-# In[ ]:
+
 
 
 # 자료형 제한
@@ -52,7 +52,7 @@ s_list[2]
 s1 = {1,2,3,[1,2,3],[4,5,6]}
 
 
-# In[ ]:
+
 
 
 # set 연산
@@ -88,7 +88,7 @@ print("대칭차집합2", s_symm2)
 print("대칭차집합3", s_symm3)
 
 
-# In[ ]:
+
 
 
 # set 메서드
@@ -113,7 +113,7 @@ deleted = s1.pop() # 임의의 값 하나 제거
 print("원소 제거3", s1, deleted)
 
 
-# In[ ]:
+
 
 
 # 부분집합(subset) 관련 메서드
@@ -135,7 +135,7 @@ print(a.isdisjoint(c))
 print(b.isdisjoint(c))
 
 
-# In[ ]:
+
 
 
 # 문제 1. 중복 제거 및 개수 세기 
@@ -151,8 +151,6 @@ print(f"제출한 학생수: {len(unique_studnets)}")
 # 제출자명단
 print(f"제출자 명단: {unique_studnets}")
 
-
-# In[44]:
 
 
 # 문제 2. 공통 관심사 찾기
@@ -174,8 +172,6 @@ print(f"공통 관심 장르: {common}")
 print(f"서로 다른 장르: {diff}")
 print(f"모든 장르 목록: {total}")
 
-
-# In[45]:
 
 
 # 문제 3. 부분집합 관계 판단

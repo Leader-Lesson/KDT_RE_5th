@@ -4,7 +4,7 @@
 # ### 15. 파일 입출력
 # - 저장장치에 저장된 파일을 읽어오거나 저장하는 작업
 
-# In[ ]:
+
 
 
 # 파일 열기와 닫기
@@ -21,7 +21,7 @@ f.write("파이썬 공부 너무너무 재밌어요.")
 f.close()
 
 
-# In[ ]:
+
 
 
 # 파일 읽기
@@ -32,7 +32,7 @@ print(content)
 f.close()
 
 
-# In[ ]:
+
 
 
 # readline() : 한 줄씩 순차적으로 읽기
@@ -44,7 +44,7 @@ print("두번째 줄:", line2)
 f.close()
 
 
-# In[ ]:
+
 
 
 # for문으로 읽기
@@ -54,7 +54,7 @@ for line in f:
 f.close()
 
 
-# In[ ]:
+
 
 
 # readlines() : 모든 줄을 한번에 리스트로 읽기
@@ -64,7 +64,7 @@ print(contents)
 f.close()
 
 
-# In[ ]:
+
 
 
 # tell() : 현재 읽고 있는 위치(바이트)를 반환
@@ -75,7 +75,7 @@ print("5바이트 읽은 후 위치:", f.tell())
 f.close()
 
 
-# In[ ]:
+
 
 
 # seek() : 파일 포인터 위치를 이동
@@ -86,7 +86,7 @@ print(f.read())
 f.close()
 
 
-# In[ ]:
+
 
 
 # 파일 쓰기
@@ -98,7 +98,7 @@ f.write("파이썬 공부 너무너무 재밌어요.")
 f.close()
 
 
-# In[ ]:
+
 
 
 # a모드 : 추가쓰기
@@ -107,7 +107,7 @@ f.write("\n추가한 내용입니다.")
 f.close()
 
 
-# In[ ]:
+
 
 
 # with문
@@ -118,7 +118,7 @@ with open("with_example.txt", "w", encoding="utf-8") as f1:
   f1.write("파일입출력 짱 쉬움.")
 
 
-# In[ ]:
+
 
 
 # 파일 읽기
@@ -127,7 +127,7 @@ with open("with_example.txt", "r", encoding="utf-8") as f2:
   print(data)
 
 
-# In[ ]:
+
 
 
 # 예제1. 파일에서 랜덤 추출하기
@@ -144,7 +144,7 @@ with open("words.txt", "w", encoding="utf-8") as f1:
     f1.write(i + "\n")
 
 
-# In[ ]:
+
 
 
 import random
@@ -156,7 +156,7 @@ with open("words.txt", "r", encoding="utf-8") as f2:
     print(word)
 
 
-# In[ ]:
+
 
 
 # 예제2. 입력 받아 파일 쓰기
@@ -168,7 +168,7 @@ with open("with_example.txt", "a", encoding="utf-8") as f3:
     f3.write(text + "\n")
 
 
-# In[ ]:
+
 
 
 # 실습1. 회원 명부 작성하기
@@ -184,8 +184,6 @@ with open("member.txt", "r", encoding="utf-8") as f:
   print("[회원명부]")
   print(f.read())
 
-
-# In[7]:
 
 
 # 실습2~3. 회원 명부를 이용한 로그인 기능
@@ -231,9 +229,6 @@ else:
   print("로그인 실패")
 
 
-# In[46]:
-
-
 # 바이너리 파일 읽기
 with open("./images/dog.jpg", "rb") as f:
   img = f.read()
@@ -244,7 +239,7 @@ with open("./output/dog_copy.jpg", "wb") as f:
   f.write(img)
 
 
-# In[ ]:
+
 
 # 예외처리
 try:

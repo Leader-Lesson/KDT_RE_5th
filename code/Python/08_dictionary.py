@@ -7,7 +7,7 @@
 # - 변경가능한 자료형
 # - 순서가 보장되지 않았다가 → py 3.7버전 이후 순서가 보장됨
 
-# In[ ]:
+
 
 
 # dict 만들기
@@ -38,7 +38,7 @@ movie2 = dict(zip(keys, values))
 print(movie2)
 
 
-# In[ ]:
+
 
 
 # 키로 사용할 수 없는 자료형
@@ -50,7 +50,7 @@ d3 = {{1,2,3}: "리스트를 키로?"} # 가변 자료형은 키로 사용 불�
 d3
 
 
-# In[ ]:
+
 
 
 # dict 데이터 조회
@@ -69,7 +69,7 @@ print(person.get("email")) # default 지정 안 할 시 none 출력
 print(person.get("email", "이메일이 존재하지 않습니다")) # default 값 지정 가능
 
 
-# In[ ]:
+
 
 
 # get 사용 예제
@@ -84,7 +84,7 @@ result = user_data.get(key, "존재하지 않는 데이터입니다.")
 print(result)
 
 
-# In[ ]:
+
 
 
 # 데이터 추가 및 수정
@@ -142,8 +142,6 @@ del movie_data
 # print(movie_data) # NameError 발생
 
 
-# In[3]:
-
 
 # 딕셔너리 메서드
 user_data = {
@@ -161,8 +159,6 @@ print("값", list(user_data.values())) # 리스트로 변환해서 출력
 # items : 모든 키값쌍을 반환
 print("쌍", list(user_data.items())) # 리스트로 변환해서 출력
 
-
-# In[51]:
 
 
 # 문제1
@@ -206,8 +202,6 @@ user.setdefault("signup_date", "2025-07-10")
 
 print(user)
 
-
-# In[53]:
 
 
 # 문제2

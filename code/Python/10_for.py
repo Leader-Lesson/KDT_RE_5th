@@ -4,7 +4,7 @@
 # ### 10. for문
 # - 이터러블의 요소를 하나씩 꺼내서 실행 블록에 전달하는 반복문
 
-# In[ ]:
+
 
 
 import time
@@ -17,7 +17,7 @@ for 반복변수 in ["가","나","다","라"]:
   time.sleep(1)
 
 
-# In[ ]:
+
 
 
 # 리스트로 반복
@@ -28,7 +28,7 @@ for fruit in fruits:
   time.sleep(1)
 
 
-# In[ ]:
+
 
 
 # 문자열로 반복
@@ -38,7 +38,7 @@ for char in my_str:
   print(char)
 
 
-# In[ ]:
+
 
 
 # 튜플을 활용한 반복
@@ -50,7 +50,7 @@ for x,y in 좌표:
     time.sleep(1)
 
 
-# In[ ]:
+
 
 
 # 딕셔너리를 이용한 반복
@@ -73,7 +73,7 @@ for key, value in person.items():
   print(f"key: {key}, value: {value}")
 
 
-# In[ ]:
+
 
 
 # 실습 1.
@@ -87,7 +87,7 @@ for number in numbers:
 print(doubled)
 
 
-# In[ ]:
+
 
 
 # 문제 2.
@@ -100,7 +100,7 @@ for word in words:
 print(lengths)
 
 
-# In[ ]:
+
 
 
 # 문제 3.
@@ -117,7 +117,7 @@ print(f"x 좌표: {x_values}")
 print(f"y 좌표: {y_values}")
 
 
-# In[ ]:
+
 
 
 # for문과 range()
@@ -148,7 +148,7 @@ for i in range(100):
   print("안녕하세요!")
 
 
-# In[ ]:
+
 
 
 # 간격(step) 지정
@@ -156,7 +156,7 @@ for i in range(0, 11, 2):
   print(i)
 
 
-# In[ ]:
+
 
 
 # 역순 반복
@@ -166,7 +166,7 @@ for i in range(10, 0, -1):
   time.sleep(1)
 
 
-# In[ ]:
+
 
 
 # range의 다양한 활용
@@ -177,7 +177,7 @@ print(list(range(3,100,3)))
 print(list(range(10,0,-1)))
 
 
-# In[ ]:
+
 
 
 # 실습 2.
@@ -191,7 +191,7 @@ for i in range(num+1):
 print(sum_num)
 
 
-# In[ ]:
+
 
 
 # 문제 2. 
@@ -201,7 +201,7 @@ for i in range(1,10):
   print(f"{dan} x {i} = {dan * i}")
 
 
-# In[ ]:
+
 
 
 # 문제 3.
@@ -218,7 +218,7 @@ for i in range(1,101):
 print(result)
 
 
-# In[ ]:
+
 
 
 n = int(input())
@@ -237,7 +237,7 @@ for i in range(1, n+1):
       print(i)
 
 
-# In[ ]:
+
 
 
 # 루프 제어문
@@ -252,7 +252,7 @@ for i in range(10):
 print("반복 종료")
 
 
-# In[ ]:
+
 
 
 # continue : 현재 반복을 넘어감
@@ -267,7 +267,7 @@ for i in range(5):
 print("반복 종료")
 
 
-# In[ ]:
+
 
 
 # pass
@@ -275,7 +275,7 @@ for i in range(10):
   pass
 
 
-# In[ ]:
+
 
 
 # for - else 구문
@@ -287,7 +287,7 @@ else:
   print("반복종료")
 
 
-# In[ ]:
+
 
 
 # 중첩 for문
@@ -302,7 +302,7 @@ for i in range(5):
   time.sleep(2)
 
 
-# In[ ]:
+
 
 
 # 이중 for문
@@ -314,7 +314,7 @@ for i in range(4):
   time.sleep(1)
 
 
-# In[ ]:
+
 
 
 colors = ["red", "blue"]
@@ -325,7 +325,7 @@ for color in colors:
     print(f"{color}: {fruit}")
 
 
-# In[ ]:
+
 
 
 # 문제 1.
@@ -338,7 +338,7 @@ for i in range(2,10):
   print()
 
 
-# In[ ]:
+
 
 
 # 문제 2. 별찍기
@@ -351,7 +351,7 @@ for i in range(1, n+1):
   print()
 
 
-# In[ ]:
+
 
 
 # 오른쪽 정렬
@@ -365,7 +365,7 @@ for i in range(1, n+1):
   print()
 
 
-# In[ ]:
+
 
 
 # 가운데 정렬
@@ -381,7 +381,7 @@ for i in range(1, n+1):
   print()
 
 
-# In[ ]:
+
 
 
 # 리스트 컴프리헨션(List Comprehension)
@@ -400,7 +400,7 @@ squares_2 = [x ** 2 for x in range(1,6)]
 print(squares_2)
 
 
-# In[ ]:
+
 
 
 # 조건문 추가하기
@@ -408,7 +408,7 @@ squares_3 = [x ** 2 for x in range(1,11) if x % 2 == 0]
 squares_3
 
 
-# In[ ]:
+
 
 
 words = ["apple", "banana", "kiwi", "grape"]
@@ -416,7 +416,7 @@ lengths = [len(word) for word in words]
 lengths
 
 
-# In[ ]:
+
 
 
 numbers = [3, 6, 1, 8, 4]
@@ -424,7 +424,7 @@ doubled = [x * 2 for x in numbers]
 doubled
 
 
-# In[ ]:
+
 
 
 # 중첩 for문
@@ -435,8 +435,6 @@ pairs = [(color, fruit) for color in colors for fruit in fruits]
 pairs
 
 
-# In[21]:
-
 
 # 실습 4.
 # 문제 1.
@@ -444,15 +442,13 @@ squares = [x**2 for x in range(1,11)]
 print(squares)
 
 
-# In[ ]:
+
 
 
 # 문제 2.
 result = [x for x in range(3, 51) if x % 3 == 0]
 print(result)
 
-
-# In[25]:
 
 
 # 문제 3.

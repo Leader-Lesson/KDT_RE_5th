@@ -6,7 +6,7 @@
 # - 조건이 False가 되면 반복을 멈춤
 #   - 반복 횟수가 정해지지 않았을 때 사용
 
-# In[ ]:
+
 
 
 # while문 기본 문법
@@ -16,7 +16,7 @@
   # 반복할 코드
 
 
-# In[ ]:
+
 
 
 # 무한루프 
@@ -26,7 +26,7 @@ while True:
   print("반복중")
 
 
-# In[ ]:
+
 
 
 # 예제1
@@ -38,7 +38,7 @@ while light == "green":
 print("중지!!")
 
 
-# In[ ]:
+
 
 
 import time
@@ -54,7 +54,7 @@ while i < 5:
 print("반복 종료")
 
 
-# In[ ]:
+
 
 
 # 실습 1.
@@ -69,7 +69,7 @@ while user_input != secret_code:
 print("입장이 허용되었습니다!")
 
 
-# In[ ]:
+
 
 
 import random
@@ -94,7 +94,7 @@ while num != answer:
 print(f"{time}번 만에 정답을 맞췄습니다.")
 
 
-# In[ ]:
+
 
 
 # 루프 제어문
@@ -111,7 +111,7 @@ while True:
     break
 
 
-# In[ ]:
+
 
 
 # 예제1
@@ -131,7 +131,7 @@ while True:
 print("반복문 종료")
 
 
-# In[ ]:
+
 
 
 # 예제1-2
@@ -146,7 +146,7 @@ while True:
 print("반복문 종료")
 
 
-# In[ ]:
+
 
 
 # 예제1-3
@@ -162,7 +162,7 @@ print("반복문 종료")
 # break로 종료를 시키면, 이후 실행블록의 코드는 무시되고 바로 반복문을 탈출함
 
 
-# In[ ]:
+
 
 
 # continue
@@ -176,7 +176,7 @@ while i < 5:
 print("반복 종료")
 
 
-# In[ ]:
+
 
 
 # 실습 2. 
@@ -195,7 +195,7 @@ while True:
     print("비밀 코드가 틀렸습니다. 다시 시도하세요.")
 
 
-# In[ ]:
+
 
 
 # 문제 2.
@@ -216,7 +216,7 @@ while cnt < 5:
 print(f"총 나이 합계는 {sum_age}, 평균은 {int(sum_age / cnt)}")
 
 
-# In[ ]:
+
 
 
 # 중첩 while문
@@ -235,7 +235,7 @@ while dan <= 9:
   dan += 1
 
 
-# In[ ]:
+
 
 
 # 실습3
