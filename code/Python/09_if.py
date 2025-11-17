@@ -204,4 +204,21 @@ elif item == "도시락":
     print("금액이 부족해요.")
 else:
   print("입력이 잘못되었습니다.")
+  
+  
+# 딕셔너리 이용
+prices = {
+  "김밥": 2500,
+  "삼각김밥": 1500,
+  "도시락": 4000
+}
+
+if item in prices:
+  if money >= prices[item]:
+    print(f"{item}을(를) 구입했습니다.")
+  else:
+    print("금액이 부족해요.")
+else:
+  print("입력이 잘못되었습니다.")
+
 
