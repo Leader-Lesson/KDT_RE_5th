@@ -42,7 +42,7 @@ print(a2 / 2)   # [[ 5.5  6. ]
 # 배열의 구조가 다를 경우
 a1 = np.array([1,2])
 a2 = np.array([1,2,3])
-print(a1+a2)  # ValueError: operands could not be broadcast together with shapes (2,) (3,)
+# print(a1+a2)  # ValueError: operands could not be broadcast together with shapes (2,) (3,)
 
 # 브로드캐스팅 
 # 자동으로 배열의 크기를 확장 → 서로 다른 크기의 배열 간 연산을 가능하게 하는 기능
@@ -96,7 +96,7 @@ print(a1 + a2) # [[11 21 31]
 # 브로드캐스팅 불가능한 경우
 a1 = np.ones((2,3))
 a2 = np.ones((3,2))
-a1 + a2  # ValueError: operands could not be broadcast together with shapes (2,3) (3,2)
+# a1 + a2  # ValueError: operands could not be broadcast together with shapes (2,3) (3,2)
 
 # 실습1
 # 문제1. 다음 배열을 생성하고, 모든 요소에 3을 더하세요.
@@ -316,6 +316,13 @@ print(result)
 # [['C' 'B' 'A']
 #  ['C' 'A' 'C']
 #  ['B' 'B' 'A']]
+
+
+
+# 행렬 곱셈
+
+
+
 
 # np.dot(a,b) : 배열의 내적 연산
 # 스칼라 연산(OD)
