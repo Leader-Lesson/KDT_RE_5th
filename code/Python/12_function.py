@@ -217,7 +217,7 @@ def average(*agrs):
     return "입력값이 없습니다"
   return sum(agrs) / len(agrs)
 
-average()
+print(average(1,2,3))
 
 
 
@@ -235,11 +235,11 @@ def longgest(*args):
 # longgest("apple","watermelon","grape","kiwi")
 
 # 방법 2.
-def longgest2(*agrs):
+def longgest2(*args):
     # 예외처리
-  if len(agrs) == 0:
+  if len(args) == 0:
     return "입력값이 없습니다"
-  return max(agrs, key=len)
+  return max(args, key=len)
 
 longgest2()
 
@@ -249,8 +249,8 @@ longgest2()
 
 # 문제 3. 사용자 정보 출력 함수
 # dict.items() 활용
-def print_info(**kwagrs):
-  for key, value in kwagrs.items():
+def print_info(**kwargs):
+  for key, value in kwargs.items():
     print(f"{key}: {value}")
 
 print_info(name="ian", age=15, city="서울", job="developer")
