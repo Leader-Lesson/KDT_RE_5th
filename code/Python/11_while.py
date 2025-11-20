@@ -263,35 +263,35 @@
 user_id = "codingon"
 user_pw = "abc123"
 
-# # 1) ID 먼저 검사하는 경우
-# while True:
-#   # 아이디 확인
-#   id_input = input("ID를 입력하세요: ")
+# 1) ID 먼저 검사하는 경우
+while True:
+  # 아이디 확인
+  id_input = input("ID를 입력하세요: ")
 
-#   # 아이디가 일치하지 않을시
-#   if id_input != user_id:
-#     print("ID가 일치하지 않습니다.")
-#     continue
+  # 아이디가 일치하지 않을시
+  if id_input != user_id:
+    print("ID가 일치하지 않습니다.")
+    continue
 
-#   while True:
-#     # 비밀번호 확인
-#     pw_input = input("비밀번호를 입력하세요: ")
+  while True:
+    # 비밀번호 확인
+    pw_input = input("비밀번호를 입력하세요: ")
 
-#     if pw_input != user_pw:
-#       print("비밀번호가 일치하지 않습니다.")
-#       continue
+    if pw_input != user_pw:
+      print("비밀번호가 일치하지 않습니다.")
+      continue
 
-#     print("로그인 성공!")
-#     break
+    print("로그인 성공!")
+    break
 
-#     # if pw_input == user_pw:
-#     #   print("로그인 성공")
-#     #   break
+    # if pw_input == user_pw:
+    #   print("로그인 성공")
+    #   break
 
-#     # print("비밀번호가 일치하지 않습니다.")
-#     # continue
+    # print("비밀번호가 일치하지 않습니다.")
+    # continue
 
-#   break
+  break
 
 
 
