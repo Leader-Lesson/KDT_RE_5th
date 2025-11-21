@@ -394,47 +394,40 @@ outter_func()
 # 이미 로그인된 상태에서 다시 로그인하면 "이미 로그인되어 있습니다"를 출력합니다.
 # 로그아웃하지 않고 로그인을 여러 번 시도할 수 없도록 합니다.
 
+
 current_user = None
 login_count = 0
 
 def login(name):
-  global current_user
-  global login_count
-
-  if current_user == None:
-    if len(name) > 4:
-      current_user = name
-      print(f"🤗{name}님 로그인 성공!")
-    # 예외처리
+    global current_user
+    global login_count
+    
+    if current_user == None:
+        current_user = name
+        print(f"{name}님 로그인 성공!")
     else:
-      print("⚠️아이디는 네글자 이상이어야 해요.")
-
-      login_count += 1
-      if login_count > 4:
-        print("더이상 로그인 시도를 할 수 없습니다.")
-  else:
-    print("🚨이미 로그인되어 있습니다.")
-
-    login_count += 1
-    if login_count > 4:
-      print("더이상 로그인 시도를 할 수 없습니다.")
-
+        print("이미 로그인되어 있습니다.")
+        login_count += 1
+        if login_count > 4:
+            print("더이상 로그인 시도를 할 수 없습니다.")
+    
 
 def logout():
-  global current_user
-  global login_count 
-  if current_user == None:
-    print("⚠️로그인 상태가 아닙니다.")
-  else:
-    print("✅로그아웃 되었습니다!")
-    current_user = None
-    login_count = 0
+    global current_user
+    global login_count
+    
+    if current_user == None:
+        print("로그인 상태가 아닙니다.")
+    else:
+        print("로그아웃 되었습니다!")
+        current_user = None
+        login_count = 0
+        
 
-login("")
-login("a")
-login("b")
-login("c")
-login("de")
+logout()
+login("kim")
+login("lee")
+logout()
 
 
 
