@@ -174,11 +174,17 @@ print(reshaped)
 #  [8]]
 print(reshaped.shape) # (9, 1)
 
-# np.concatenate()
+
+
+
+
+# 배열의 결합과 분리
+
+# np.concatenate((arr1, arr2, ...), axis=0)
 # 배열 시퀀스를 결합
 # 기존 구조 안에서 결합
 a = np.array([[1,2],[3,4]]) # (2, 2)
-b = np.array([[5,6]])
+b = np.array([[5,6]])          # (1, 2)
 
 result1 = np.concatenate((a, b), axis=0)
 print(result1)
@@ -190,7 +196,7 @@ print(result1.shape) # (3, 2)
 # 결합이 불가 → 겹합하는 axis를 제외한 나머지 차원이 같아야 함
 # result2 = np.concatenate((a, b), axis=1)
 
-c = np.array([[7],[8],[9]])
+c = np.array([[7],[8],[9]]) # (3, 1)
 result3 = np.concatenate((result1, c), axis=1)
 print(result3)
 # [[1 2 7]
@@ -198,7 +204,8 @@ print(result3)
 #  [5 6 9]]
 print(result3.shape) # (3, 3)
 
-# np.stack()
+
+# np.stack((arr1, arr2, ...), axis=0)
 # 새로운 차원을 추가하면서 결합
 a = np.array([1,2,3]) # (3,)
 b = np.array([4,5,6])
