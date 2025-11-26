@@ -410,16 +410,15 @@ while n < 11:
     print(f"{n}번 문제")
     question = random.choice(words)
     print(question)
-    user_answer = input()
+    while True:
+        user_answer = input()
 
-    if user_answer == "종료":
-        break
-
-    if question == user_answer:
-        print("통과!")
-        n += 1
-    else:
-        print("오타! 다시 도전!")
+        if question == user_answer:
+            print("통과!!")
+            n += 1
+            break
+        else:
+            print("오타! 다시 도전!")
 
 end = time.time()
 et = end - start
