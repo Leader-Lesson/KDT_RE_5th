@@ -242,12 +242,12 @@ else:
 
 
 # 바이너리 파일 읽기
-with open("./images/dog.jpg", "rb") as f:
+with open("./Python/images/dog.jpg", "rb") as f:
   img = f.read()
   print(img)
 
 # 바이너리 파일 쓰기
-with open("./output/dog_copy.jpg", "wb") as f:
+with open("./Python/images/dog_copy.jpg", "wb") as f:
   f.write(img)
 
 
