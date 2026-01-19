@@ -19,6 +19,11 @@
 
 .item1 {
   background-color: aquamarine;
+  /* 
+    grid-row: 시작줄 / 끝줄;
+    grid-row: 1 / 3; -> 1번줄, 3번줄
+    grid-row: 1 / span 2; -> 1번줄, 2칸 차지
+  */
   grid-row: auto / span 2;
 }
 
